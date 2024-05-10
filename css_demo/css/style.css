@@ -1,0 +1,41 @@
+#multi-text{
+    color: aquamarine;
+    text-align: right;
+    font-size: 70px;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+.center-text {
+    text-align: center;
+}
+
+.div {
+    font-size: large;
+    background-color: white;
+    text-align: center;
+}
+
+#span-1 {
+    color:aqua
+}
+
+#span-2 {
+    color: blue;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paolo | Choose your own adventure game</title>
+</head>
+<body>
+    <script>
+        function playGame() {
+        var enter = confirm("you hear your alarm. Do you want to wake up?");
+        alert(enter);
+        if (enter == true) {
+            //we wake up
+            alert("you wake up and see the world in a zombie apocalypse and what do you do now?");
+
+            var wakingChoice = prompt("You can do 3 things, Do you want to, Jump out the window of your 10 story apartment (1)? Go to your local gun store (2)? Call your parents? (3)");
+            if (wakingChoice == 1) {
+                alert("you fall for a good 15 seconds and then die and splat into the ground.");
+                var deathChoice = prompt("You die and you can choose to go to Heaven(1), Hell(2), or meet God (3)");
+                if(deathChoice == 1) {
+                    alert("you go to heaven and live out the rest of your days in heaven (GAME OVER)");
+                } else if (deathChoice == 2) {
+                    alert ("you meet the devil and he kills you (GAME OVER)");
+                } else {
+                    alert("you meet God and he smiles and invites you into his home");
+                    
+                    var godChoice = prompt("what do you say to god? You are a bum (1). Can i go back to earth (2)? or, You look stupid");
+                    if(godChoice == 1) {
+                        alert("he smites you (GAME OVER)")
+                    } else if (godChoice ==2) {
+                        alert("he says, SURE!")
+                        var earthChoice = prompt("do you go back to restart the game on earth (1) or do you ascend and win? (2)");
+                        if(earthChoice == 1) {
+                            var playAgain = prompt("do you want to play again?(1)")
+                            if (playAgain == 1) 
+                            playGame();
+                        } else if(earthChoice == 2) {
+                            alert("game over, (YOU WIN!!!!)")
+                        }
+                    } else {
+                        alert ("He smites you (GAME OVER)")
+                    }
+                }
+
+            } else if (wakingChoice == 2) {
+                alert("you step outside and go the the gun store)");
+                    var gunChoice = prompt("you can get one of three guns, a Glock (1), A desert eagle (2), or an ak 47(3)")
+                    if(gunChoice == 1) {
+                        alert("your glock is too weak and you die (GAME OVER)")
+                    } else if(gunChoice == 2) {
+                        alert("you gun is too weak and you die (GAME OVER)")
+                    } else if(gunChoice == 3) {
+                        alert("you get a little overconfident with you gun and you die (GAME OVER)")
+                    }
+            } else if (wakingChoice == 3) {
+                alert("you call your parents and they dont respond");
+                alert("you die of depression (GAME OVER)");
+            }
+        } 
+        else {
+            //do not wake up
+            alert("GAME OVER");
+        }
+        
+        var playAgain = prompt("do you want to play again?(1)")
+            if (playAgain == 1) 
+            playGame();
+        }
+   
+        playGame();
+    </script>
+</body>
+</html>
